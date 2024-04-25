@@ -7,34 +7,19 @@ app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
-    """Display a simple greeting message.
-
-    Returns:
-        str: A simple greeting message.
-    """
+    """Function that returns a simple string"""
     return "Hello HBNB!"
 
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
-    """Display 'HBNB'.
-
-    Returns:
-        str: The string 'HBNB'.
-    """
+    """Function that returns HBNB string"""
     return "HBNB"
 
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_text(text):
-    """Display 'C' followed by the value of the 'text' variable.
-
-    Args:
-        text (str): The value captured from the URL dynamic segment.
-
-    Returns:
-        str: A string containing 'C' followed by the value of 'text'.
-    """
+    """Function that returns a C string"""
     result = text.replace('_', ' ')
     return "C {}".format(result)
 
@@ -42,14 +27,7 @@ def c_text(text):
 @app.route("/python", strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def python_print(text="is cool"):
-    """ Display 'Python' followed by the value of the 'text' variable.
-
-    Args:
-        text (str): The value captured from the URL dynamic segment.
-
-    Returns:
-        str: A string containing 'Python' followed by the value of 'text'.
-    """
+    """Function that returns a Python string"""
     rst = text.replace('_', ' ')
     return "python {}".format(rst)
 

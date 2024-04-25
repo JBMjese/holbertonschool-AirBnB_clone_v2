@@ -7,11 +7,7 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def hello_hbnb():
-    """Display a simple greeting message.
-
-    Returns:
-        str: A simple greeting message.
-    """
+    """Function that returns a simple string"""
     return "Hello HBNB"
 
 

@@ -28,8 +28,8 @@ def c_text(text):
 @app.route('/python/<text>', strict_slashes=False)
 def python_print(text="is cool"):
     """Function that returns a Python string"""
-    rst = text.replace('_', ' ')
-    return "python {}".format(rst)
+    text = text.replace('_', ' ')
+    return f"Python {text}"
 
 
 if __name__ == '__main__':

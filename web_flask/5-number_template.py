@@ -38,6 +38,7 @@ def num(n):
     """Function that returns a string only if n is a number"""
     return f"{n} is a number"
 
+
 @app.route("/number_tempate/<int:n>", strict_slashes=False)
 def number_template(n):
     """Function that returns a string only if n is a number"""

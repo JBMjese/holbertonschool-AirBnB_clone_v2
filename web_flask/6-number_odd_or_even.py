@@ -44,6 +44,7 @@ def number_template(n):
     """Function that returns a string only if n is a number"""
     return render_template('5-number.html', n=n)
 
+
 @app.route('/number_odd_or_even/<int:n>')
 def funct(n):
     """Function that returns a string indicating if a number is odd or even"""

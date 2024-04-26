@@ -39,7 +39,7 @@ def num(n):
     return f"{n} is a number"
 
 
-@app.route("/number_tempate/<int:n>", strict_slashes=False)
+@app.route("/number_template/<int:n>", strict_slashes=False)
 def number_template(n):
     """Function that returns a string only if n is a number"""
     return render_template('5-number.html', n=n)
